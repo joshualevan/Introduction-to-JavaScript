@@ -296,10 +296,19 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter( /*add your code here*/ ) {
-    /*add your code here*/
-}
+function vowelCounter(string) {
+    let vowelCount = 0;
+    let newString = string.toLowerCase();
 
+    for (let i = 0; i < newString.length; i++) {
+        if (newString[i] === 'a' || newString[i] === 'e' || newString[i] === 'i' || newString[i] === 'o' || newString[i] === 'u') {
+            vowelCount++
+        }
+    }
+    return vowelCount;
+}
+console.log(vowelCounter('I am a string.'));
+console.log(vowelCounter('I am a string with more vowels.'));
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
