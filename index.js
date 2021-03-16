@@ -88,9 +88,10 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
+dogYears(35);
 
-function dogYears( /*add your code here*/ ) {
-    /*add your code here*/
+function dogYears(age) {
+    return age * 7;
 }
 
 
@@ -122,10 +123,29 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */
 
-function hungryDog( /*add your code here*/ ) {
-    /*add your code here*/
+function hungryDog(pounds, age) {
+    let poundsOfFood;
+    if (age >= 1 && pounds <= 5) {
+        poundsOfFood = pounds * 0.05;
+    } else if (age >= 1 && pounds >= 6 && pounds <= 10) {
+        poundsOfFood = pounds * 0.04;
+    } else if (age >= 1 && pounds >= 11 && pounds <= 15) {
+        poundsOfFood = pounds * 0.03;
+    } else if (age >= 1 && pounds > 15) {
+        poundsOfFood = pounds * 0.02;
+    } else if (age >= 2 / 12 && age < 4 / 12) {
+        poundsOfFood = pounds * 0.1;
+    } else if (age > 4 / 12 && age < 7 / 12) {
+        poundsOfFood = pounds * 0.05;
+    } else if (age > 7 / 12 && age < 1) {
+        poundsOfFood = pounds * 0.04;
+    } else {
+        poundsOfFood = 'Puppy is too young to calculate';
+    }
+    return poundsOfFood;
 }
 
+hungryDog(10, 6 / 12);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -153,8 +173,7 @@ let user = 'rock';
 
 if (computer === 0) {
     computer = 'rock';
-} else
-if (computer === 1) {
+} else if (computer === 1) {
     computer = 'paper';
 } else {
     computer = 'scissors';
