@@ -58,9 +58,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply( /*add your code here*/ ) {
     /*add your code here*/
-  }
+}
 
 
 
@@ -74,7 +74,7 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
+function dogYears( /*add your code here*/ ) {
     /*add your code here*/
 }
 
@@ -105,11 +105,11 @@ Use the hungryDog function and feeding requirements below to do the following:
      7 - 12 months 4% of their body weight
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
-*/  
+*/
 
-function hungryDog(/*add your code here*/){
+function hungryDog( /*add your code here*/ ) {
     /*add your code here*/
-  }
+}
 
 
 
@@ -133,12 +133,34 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.floor(Math.random() * 3);
+let user = 'rock';
 
-function game(user, computer){
-    /*add your code here*/
+if (computer === 0) {
+    computer = 'rock';
+} else
+if (computer === 1) {
+    computer = 'paper';
+} else {
+    computer - 'scissors';
 }
-  
-  
+console.log(computer);
+
+function game(user, computer) {
+    if (user === computer) {
+        return `it's a tie`;
+    } else if (user === 'rock' && computer === 'scissors') {
+        return `you win!`;
+    } else if (user === 'paper' && computer === 'rock') {
+        return `you win!`;
+    } else if (user === 'scissors' && computer === 'rock') {
+        return `you win!`;
+    } else {
+        return `you lose!
+    }
+}
+
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -151,9 +173,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles( /*add your code here*/ ) {
     /*add your code here*/
-  }
+}
 
 
 
@@ -165,10 +187,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet( /*add your code here*/ ) {
     /*add your code here*/
-  }
- 
+}
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -181,9 +203,9 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong( /*add your code here*/ ) {
+    /*add your code here*/
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -200,12 +222,12 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
-function grade(/*Your Code here */){
-  /*Your Code here */
-  }
-  
-  
+
+function grade( /*Your Code here */ ) {
+    /*Your Code here */
+}
+
+
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -220,19 +242,19 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
+function vowelCounter( /*add your code here*/ ) {
     /*add your code here*/
 }
 
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-function foo(){
+function foo() {
     //console.log('its working');
     return 'bar';
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
+export default {
     foo,
     multiply,
     dogYears,
