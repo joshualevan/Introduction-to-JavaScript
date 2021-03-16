@@ -259,8 +259,26 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
 
-function grade( /*Your Code here */ ) {
-    /*Your Code here */
+function grade(grade) {
+    let letterGrade;
+    if (grade >= 90) {
+        letterGrade = 'A';
+    } else if (grade >= 80 && grade < 90) {
+        letterGrade = 'B';
+    } else if (grade >= 70 && grade < 80) {
+        letterGrade = 'C';
+    } else if (grade >= 60 && grade < 70) {
+        letterGrade = 'D';
+    } else {
+        letterGrade = 'F';
+    }
+
+    let vowel = '';
+    if (letterGrade === 'A' || letterGrade === 'F') {
+        vowel = 'n';
+    }
+
+    return `you got a${vowel} ${letterGrade}`
 }
 
 
