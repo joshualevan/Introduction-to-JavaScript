@@ -156,7 +156,7 @@ function game(user, computer) {
     } else if (user === 'scissors' && computer === 'rock') {
         return `you win!`;
     } else {
-        return `you lose!
+        return `you lose!`
     }
 }
 
