@@ -17,7 +17,11 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 18;
 
+if (votingAge >= 18) {
+    console.log(true);
+}
 
 
 /*
@@ -31,7 +35,13 @@ Do the following:
    HINT: no function required
 */
 
+let value1;
+let value2 = 'Change me';
+if (value2 === 'Change me') {
+    value1 = `I'm changed!`;
 
+}
+console.log(value1);
 
 
 
@@ -46,6 +56,10 @@ Do the following:
    HINT: look up the Number method
 */
 
+let year = '1999';
+year = Number(year);
+console.log(year);
+console.log(`${year} is a ${typeof year}`);
 
 
 
@@ -58,9 +72,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply( /*add your code here*/ ) {
-    /*add your code here*/
+function multiply(a, b) {
+    return a * b;
 }
+multiply(2, 3);
 
 
 
@@ -142,7 +157,7 @@ if (computer === 0) {
 if (computer === 1) {
     computer = 'paper';
 } else {
-    computer - 'scissors';
+    computer = 'scissors';
 }
 console.log(computer);
 
